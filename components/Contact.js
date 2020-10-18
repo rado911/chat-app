@@ -14,7 +14,7 @@ function Contact(props) {
                     <p class="name">
                         <h3>{props.name}</h3>
                     </p>
-                    <box class="status-online" alt="online"></box>
+                    <box className={props.status ? "status-online" : "status-offline"} alt="online"></box>
                     <p class="status-text">
                         <h2>{props.status}</h2>
                     </p>

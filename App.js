@@ -1,6 +1,6 @@
 import React from 'react';
-import { unstable_renderSubtreeIntoContainer } from 'react-dom';
 import Contact from './components/Contact';
+import ContactList from './components/ContactList';
 
 function App() {
 
@@ -8,10 +8,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <ContactList/>
         <Contact image="https://randomuser.me/api/portraits/women/15.jpg"
           alt="Marry Poppins"
           name="Marry Poppins"
-          status="Online" />
+          status="Offline" />
         <Contact image="https://randomuser.me/api/portraits/men/60.jpg"
         alt="Hey Dude"
         name="Leslie Perez"
